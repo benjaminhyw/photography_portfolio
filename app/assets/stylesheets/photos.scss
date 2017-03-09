@@ -1,3 +1,23 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#site-container{
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+}
+
+#landing-intro{
+  display: flex;
+  background-color: gray;
+  width: 100%;
+}
+
+#photo-container{
+  display: flex;
+  width:100%;
+  background-color: purple;
+}

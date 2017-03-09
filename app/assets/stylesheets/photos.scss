@@ -1,3 +1,44 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  height: 100%;
+  margin:0;
+}
+
+#site-container{
+  display: flex;
+  flex-direction: column;
+  height: 200%;
+  width: 100%;
+}
+
+#landing-intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background: url(background.gif);
+}
+
+#name-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 250%;
+  border: 3px solid white;
+  padding: .5%;
+  height: 15%;
+  width: 40%;
+}
+
+#photo-container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+}

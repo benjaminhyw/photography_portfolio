@@ -16,19 +16,22 @@ html, body {
 
 #landing-intro{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   color: white;
   height: 100%;
   width: 100%;
   background: url(background.gif);
 }
 
-#name{
+#name-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid white;
   padding: 2.5%;
   height: 15%;
+  width: 40%;
 }
 
 #photo-container{

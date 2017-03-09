@@ -51,15 +51,7 @@ html, body {
   background-color: red;
 }
 
-#social-media{
-  display: flex;
-  background-color: teal;
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
-}
-
-#social-media ul li{
+#nav ul li{
   display: flex;
   align-items: center;
   justify-content: center;

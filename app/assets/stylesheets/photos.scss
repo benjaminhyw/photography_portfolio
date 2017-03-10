@@ -53,6 +53,15 @@ html, body {
   width: 100%;
 }
 
+#arrow-pic{
+  border-radius: 50%;
+}
+
+#arrow-pic:hover{
+  transition: background-color .5s ease;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
 #photo-container{
   display: flex;
   height: 100%;

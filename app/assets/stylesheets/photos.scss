@@ -26,7 +26,11 @@ html, body {
 }
 
 #footer{
-  
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100%;
+  background-color: maroon;
 }
 
 #name-container{

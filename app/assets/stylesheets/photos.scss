@@ -25,14 +25,6 @@ html, body {
   background: url(background.gif);
 }
 
-#footer{
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-  width: 100%;
-  background-color: maroon;
-}
-
 #name-container{
   display: flex;
   justify-content: center;
@@ -43,6 +35,13 @@ html, body {
   padding: .5%;
   height: 15%;
   width: 40%;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: maroon;
 }
 
 #photo-container{

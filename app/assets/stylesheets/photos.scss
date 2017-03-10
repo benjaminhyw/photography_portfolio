@@ -25,6 +25,14 @@ html, body {
   background: url(background.gif);
 }
 
+#landing-container{
+  display: flex;
+  height: 70%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 #name-container{
   display: flex;
   justify-content: center;

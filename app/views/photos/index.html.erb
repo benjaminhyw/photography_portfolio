@@ -25,7 +25,7 @@
     <div id="sidescrolling-container">
       <% @photos.each do |photo| %>
         <span id="individual-photo">
-          <%= photo.url %>
+          <img src="<%= photo.url %>" height='250px' width="250px">
         </span>
       <% end %>
     </div>

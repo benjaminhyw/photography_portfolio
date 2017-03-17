@@ -37,5 +37,5 @@ Photo.create({
 Photo.create({
   user_id: 1,
   title: "Eyes",
-  url: "https://iso.500px.com/wp-content/uploads/2015/12/bwcover.jpgs"
+  url: "https://static.pexels.com/photos/120271/pexels-photo-120271.jpeg"
 })

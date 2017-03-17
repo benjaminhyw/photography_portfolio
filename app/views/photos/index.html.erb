@@ -21,6 +21,12 @@
         </span>
       </span>
     </nav>
+
+    <div id="sidescrolling-container">
+      <% @photos.each do |photo| %>
+        <%= photo.url %>
+      <% end %>
+    </div>
   </div>
 </div>
 

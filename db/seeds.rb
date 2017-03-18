@@ -37,5 +37,29 @@ Photo.create({
 Photo.create({
   user_id: 1,
   title: "Eyes",
-  url: "https://iso.500px.com/wp-content/uploads/2015/12/bwcover.jpgs"
+  url: "https://static.pexels.com/photos/120271/pexels-photo-120271.jpeg"
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Tiburon",
+  url: "https://s-media-cache-ak0.pinimg.com/originals/5f/cc/77/5fcc77b457de341705a88cfd7331089a.jpg"
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Freckles",
+  url: "https://s-media-cache-ak0.pinimg.com/736x/e4/a4/30/e4a430be8020f49366a98d78442bf6e7.jpg"
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Lion",
+  url: "https://s-media-cache-ak0.pinimg.com/originals/af/20/08/af2008e0d300f6fd3ca5b2617a06dff6.jpg"
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Tiger",
+  url: "http://www.stockvault.net/blog/wp-content/uploads/2012/11/wild-27.jpg"
 })

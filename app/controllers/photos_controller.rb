@@ -4,4 +4,8 @@ class PhotosController < ApplicationController
     @pics = Photo.order(:id).limit(2)
   end
 
+  private
+    def set_page
+      @page = params[:page] || 0
+    end
 end

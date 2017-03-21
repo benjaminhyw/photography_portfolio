@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
-    @pics = Photo.order(:id).limit(2)
+    @pics = Photo.order(:id).limit(2).offset(@page * 10)
   end
 
   private

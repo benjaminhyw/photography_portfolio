@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
-    @pics = Photo.order(:id).limit(2).offset(@page * 10)
+    @pics = Photo.order(:id).limit(3).offset(@page * 3)
   end
 
 
@@ -14,7 +14,7 @@ class PhotosController < ApplicationController
     page += 1
 
     # I'm playing around with this right now... the 5 currently shows 5 pictures, which is fine but then clicking again won't show any new pics.. so maybe this isn't actually where the problem is.. I think it has to do with page?
-    @pics = Photo.find_pics_on_page(page, 5)
+    @pics = Photo.find_pics_on_page(page, 3)
     render :index
   end
 

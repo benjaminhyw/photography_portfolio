@@ -6,11 +6,10 @@ Rails.application.routes.draw do
 
   # These next two routes exist because I am trying to figure out next page business.  These might change.
   get '/', to: 'photos#index'
-  # get 'photos/next', 'photos#next', as: 'next'
+  get 'photos/next', 'photos#next'
+
 
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
   end
-
-
 end

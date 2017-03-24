@@ -6,6 +6,8 @@ var ready = function() {
     }, 1250, "swing");
   });
 
+  $("#nav").addClass("active");
+
   $(window).on("scroll", function(){
     if($(window).scrollTop() > 325) {
       $("#nav").addClass("active");

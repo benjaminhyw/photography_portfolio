@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
 
-  before_action :set_page, only: [:index]
+  before_action :set_page, only: [:index, :next]
 
   def index
     @photos = Photo.all

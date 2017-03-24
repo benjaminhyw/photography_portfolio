@@ -11,7 +11,7 @@
   </div>
 
   <div id="photo-container">
-    <nav id="nav">
+    <nav id="nav" class='active'>
       <span id="nav-name">
         JESUS MOLINA
       </span>
@@ -23,12 +23,20 @@
     </nav>
 
     <div id="sidescrolling-container">
+      <% if @page > 1 %>
+        <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
+      <% end %>
+
       <% @pics.each do |photo| %>
         <span id="individual-photo">
           <img src="<%= photo.url %>" height='250px' width="250px">
         </span>
       <% end %>
-      <%= link_to "NEXT", next_path(@page) %>
+
+      <% if @page < @page_max %>
+        <%= link_to "NEXT", (next_path(@link) + "/#individual-photo") %>
+      <% end %>
+
     </div>
   </div>
 </div>

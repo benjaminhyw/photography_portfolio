@@ -16,5 +16,11 @@ class PhotosController < ApplicationController
   private
     def set_page
       @page = params[:id].to_i
+
+      if @page != 0
+        @link = @page + 1
+      else
+        @link = 2
+      end
     end
 end

@@ -109,9 +109,10 @@ html, body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: red;
+  justify-content: center;
   align-items: center;
   overflow-x: auto;
+  background-color: red;
 }
 
 #individual-photo{
@@ -126,4 +127,5 @@ html, body {
   display: flex;
   width: 50%;
   height: 50%;
+  margin: 3%;
 }

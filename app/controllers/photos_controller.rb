@@ -8,7 +8,7 @@ class PhotosController < ApplicationController
   end
 
   def next
-    @page += 1
+    @page
     @pics = Photo.find_pics_on_page(@page, 3)
     render :index
   end

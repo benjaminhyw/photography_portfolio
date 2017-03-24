@@ -33,7 +33,9 @@
         </span>
       <% end %>
 
-      <%= link_to "NEXT", (next_path(@link) + "/#individual-photo") %>
+      <% if @page < @page_max %>
+        <%= link_to "NEXT", (next_path(@link) + "/#individual-photo") %>
+      <% end %>
 
     </div>
   </div>

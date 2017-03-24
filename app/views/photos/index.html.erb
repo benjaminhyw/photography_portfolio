@@ -23,7 +23,9 @@
     </nav>
 
     <div id="sidescrolling-container">
-      <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
+      <% if @page > 1 %>
+        <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
+      <% end %>
 
       <% @pics.each do |photo| %>
         <span id="individual-photo">

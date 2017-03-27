@@ -1,5 +1,5 @@
 function element_in_scroll(elem){
-  var docViewLeft = $(window).scrollLop();
+  var docViewLeft = $(window).scrollLeft();
   var docViewRight = docViewLeft + $(window).width();
 
   var elemLeft = $(elem).offset().left;

@@ -12,6 +12,9 @@
 $(document).ready(function(){
   $("#next_button").on("click", function(event){
     event.preventDefault();
+
     console.log("maybe")
+
+    $("#sidescrolling-container").append("new stuff")
   })
 });

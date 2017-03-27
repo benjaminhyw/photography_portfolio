@@ -7,3 +7,11 @@
 
 //   return ((elemRight <= docViewRight) && (elemLeft >= docViewLeft));
 // }
+
+
+$(document).ready(function(){
+  $("#next_button").on("click", function(event){
+    event.preventDefault();
+    console.log("maybe")
+  })
+});

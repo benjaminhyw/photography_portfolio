@@ -23,11 +23,12 @@
     </nav>
 
     <div id="lower-main-container">
-      <div id="left-click">
+
+     <!--  <div id="left-click">
         <% if @page > 1 %>
           <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
         <% end %>
-      </div>
+      </div> -->
 
       <div id="sidescrolling-container">
         <% @pics.each do |photo| %>
@@ -40,11 +41,14 @@
           </div>
         <% end %>
       </div>
-      <div id="right-click">
+
+      <!-- These are only necessary if JavaScript is off in the browser.  Therefore they will remain here for the time being -->
+
+      <!-- <div id="right-click">
         <% if @page < @page_max %>
           <%= link_to "NEXT", (next_path(@link) + "/#individual-photo"), id: "next_button" %>
         <% end %>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

@@ -1,11 +1,12 @@
 $(document).ready(function(){
+  var count = 1;
+
   $("#next_button").on("click", function(event){
     event.preventDefault();
 
-    // Gotta figure out how to make this number change accordingly.
-    var page = 2
+    count++;
 
-    var images = $.get("photos/" + page, function(data){
+    var images = $.get("photos/" + count, function(data){
       var info = $(".individual-photo", data).each(function(){
         var title = $("#photo-title", this).text();
 

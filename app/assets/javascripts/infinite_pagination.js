@@ -1,8 +1,7 @@
 $(document).ready(function(){
   var count = 1;
 
-  $("#next_button").on("click", function(event){
-    event.preventDefault();
+  $("#sidescrolling-container").on("scroll", function(event){
 
     count++;
 
@@ -17,5 +16,5 @@ $(document).ready(function(){
         )
       })
     })
-  })
+  });
 });

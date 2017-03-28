@@ -30,6 +30,7 @@
       <% @pics.each do |photo| %>
         <span id="individual-photo">
           <img src="<%= photo.url %>" height='250px' width="250px">
+          <span id="photo-title"><%= photo.title %></span>
         </span>
       <% end %>
 

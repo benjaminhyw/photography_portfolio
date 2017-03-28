@@ -28,10 +28,10 @@
       <% end %>
 
       <% @pics.each do |photo| %>
-        <span id="individual-photo">
+        <div id="individual-photo">
           <img src="<%= photo.url %>" height='250px' width="250px">
           <span id="photo-title"><%= photo.title %></span>
-        </span>
+        </div>
       <% end %>
 
       <% if @page < @page_max %>

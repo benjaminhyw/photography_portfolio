@@ -16,7 +16,7 @@ class PhotosController < ApplicationController
     def set_page
       @photos = Photo.all
       @page = params[:id].to_i
-      @pics_per_page = 3
+      @pics_per_page = 4
       @total_pic_qty = (@photos.count / @pics_per_page)
       @page_max = @total_pic_qty + 1
 

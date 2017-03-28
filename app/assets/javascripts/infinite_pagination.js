@@ -6,13 +6,13 @@ $(document).ready(function(){
     var page = 2
 
     var images = $.get("photos/" + page, function(data){
-      var info = $("#individual-photo", data).each(function(){
+      var info = $(".individual-photo", data).each(function(){
         var title = $("#photo-title", this).text();
 
         var url = $(this).data("url");
 
         $("#sidescrolling-container").append(
-          '<div id="individual-photo"><img src="'+url+'" height="250px" width="250px"><span id="photo-title">'+title+'</span></div>'
+          '<div class="individual-photo"><img src="'+url+'" height="250px" width="250px"><span id="photo-title">'+title+'</span></div>'
         )
       })
     })

@@ -6,6 +6,13 @@ var ready = function() {
     }, 1250, "swing");
   });
 
+  // This is what does the upward scroll animation
+  $("#nav-name").on("click", function(event){
+    $('html, body').animate({
+    scrollTop: $("#site-container").offset().top
+    }, 1250, "swing");
+  });
+
   if($(window).scrollTop() < 325) {
     $("#nav").removeClass("active");
   }

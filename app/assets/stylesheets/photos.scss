@@ -115,6 +115,11 @@ html, body {
   background-color: red;
 }
 
+#left-click{
+  display: flex;
+  width: 5%
+}
+
 .individual-photo{
   display: flex;
   flex-direction: column;
@@ -124,6 +129,11 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: green;
+}
+
+#right-click{
+  display: flex;
+  width: 5%
 }
 
 #photo-title{

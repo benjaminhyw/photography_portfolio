@@ -23,9 +23,12 @@
     </nav>
 
     <div id="sidescrolling-container">
-      <% if @page > 1 %>
-        <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
-      <% end %>
+
+      <div id="left-click">
+        <% if @page > 1 %>
+          <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
+        <% end %>
+      </div>
 
       <% @pics.each do |photo| %>
         <% @pic_id = photo.id%>
@@ -37,9 +40,11 @@
         </div>
       <% end %>
 
-      <% if @page < @page_max %>
-        <%= link_to "NEXT", (next_path(@link) + "/#individual-photo"), id: "next_button" %>
-      <% end %>
+      <div id="right-click">
+        <% if @page < @page_max %>
+          <%= link_to "NEXT", (next_path(@link) + "/#individual-photo"), id: "next_button" %>
+        <% end %>
+      </div>
 
     </div>
   </div>

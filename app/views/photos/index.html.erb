@@ -22,25 +22,29 @@
       </span>
     </nav>
 
-    <div id="sidescrolling-container">
-      <% if @page > 1 %>
-        <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
-      <% end %>
+    <div id="lower-main-container">
+      <div id="left-click">
+        <% if @page > 1 %>
+          <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
+        <% end %>
+      </div>
 
-      <% @pics.each do |photo| %>
-        <% @pic_id = photo.id%>
-        <% @photo_url = Photo.where(id: @pic_id)[0].url %>
-        <div id="individual-photo" data-url="<%= @photo_url %>">
+      <div id="sidescrolling-container">
+        <% @pics.each do |photo| %>
+          <% @pic_id = photo.id%>
+          <% @photo_url = Photo.where(id: @pic_id)[0].url %>
+          <div class="individual-photo" data-url="<%= @photo_url %>">
 
-          <img src="<%= photo.url %>" height='250px' width="250px">
-          <span id="photo-title"><%= photo.title %></span>
-        </div>
-      <% end %>
-
-      <% if @page < @page_max %>
-        <%= link_to "NEXT", (next_path(@link) + "/#individual-photo"), id: "next_button" %>
-      <% end %>
-
+            <img src="<%= photo.url %>" height='250px' width="250px">
+            <span id="photo-title"><%= photo.title %></span>
+          </div>
+        <% end %>
+      </div>
+      <div id="right-click">
+        <% if @page < @page_max %>
+          <%= link_to "NEXT", (next_path(@link) + "/#individual-photo"), id: "next_button" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

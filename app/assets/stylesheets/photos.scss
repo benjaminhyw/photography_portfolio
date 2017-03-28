@@ -105,8 +105,15 @@ html, body {
   width: 6.75%;
 }
 
+#lower-main-container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
 #sidescrolling-container{
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   justify-content: center;

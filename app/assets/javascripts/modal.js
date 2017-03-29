@@ -8,7 +8,8 @@ $(document).ready(function(){
       url = $(this).data("url");
       document.getElementById("modal-image").src=url;
       modal.style.visibility = "visible";
-      console.log(url)
+      modal.style.width = "100%";
+      modal.style.height = "100%";
   });
 
   // When the user clicks on <span> (x), close the modal

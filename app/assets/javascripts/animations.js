@@ -13,6 +13,7 @@ var ready = function() {
     }, 1250, "swing");
   });
 
+  // This controls the color changing nav bar feature
   if($(window).scrollTop() < 325) {
     $("#nav").removeClass("active");
   }

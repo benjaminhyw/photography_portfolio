@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170317193128) do
     t.integer  "user_id"
     t.string   "title"
     t.string   "url"
-    t.boolean  "landscape"
+    t.boolean  "landscape?"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

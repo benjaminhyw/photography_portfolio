@@ -20,7 +20,8 @@ $(document).ready(function(){
   // When the user clicks anywhere outside of the modal, close it
   $(window).on("click", function(event){
     if (event.target == modal){
-      modal.style.visibility = "collapse";
+      modal.style.width = "0%";
+      modal.style.height = "0%";
     }
   })
 

@@ -37,6 +37,7 @@ $(document).ready(function(){
     if (event.target == modal){
       modal.style.width = "0%";
       modal.style.height = "0%";
+      $(modal_content).removeClass("modal-content-flex-landscape")
     }
   })
 

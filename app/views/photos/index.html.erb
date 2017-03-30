@@ -34,7 +34,8 @@
         <% @pics.each do |photo| %>
           <% @pic_id = photo.id%>
           <% @photo_url = Photo.where(id: @pic_id)[0].url %>
-          <div class="individual-photo" data-url="<%= @photo_url %>">
+          <% @photo_position = photo.landscape? %>
+          <div class="individual-photo" data-url="<%= @photo_url %>" data-position="<%= @photo_position %>">
 
             <img src="<%= photo.url %>" height='250px' width="250px">
             <span id="photo-title"><%= photo.title %></span>

@@ -132,12 +132,27 @@ html, body {
 .individual-photo{
   display: flex;
   flex-direction: column;
-  height: 50%;
   min-width: 27.50%;
   margin: 3%;
-  justify-content: center;
   align-items: center;
   background-color: green;
+}
+
+.individual-photo-landscape{
+  height: 40%;
+  width: 50%;
+  padding-top: 1.25%;
+}
+
+.individual-photo-portrait{
+  height: 75%;
+  width: 27.5%;
+}
+
+.actual-image{
+  display: flex;
+  width: 84%;
+  height: 84%;
 }
 
 #right-click{

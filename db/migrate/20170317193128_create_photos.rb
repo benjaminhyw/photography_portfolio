@@ -4,7 +4,7 @@ class CreatePhotos < ActiveRecord::Migration[5.0]
       t.integer :user_id
       t.string :title
       t.string :url
-      t.boolean :landscape?
+      t.boolean :landscape
 
       t.timestamps
     end

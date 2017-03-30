@@ -12,11 +12,9 @@ $(document).ready(function(){
 
       if (position == true){
         // landscape
-        console.log("true")
         $(modal_content).addClass("modal-content-flex-landscape")
       } else {
         // portrait
-        console.log("false")
         $(modal_content).addClass("modal-content-flex-portrait")
       }
 

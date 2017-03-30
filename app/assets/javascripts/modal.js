@@ -5,18 +5,21 @@ $(document).ready(function(){
   var url = url || ""
   var position = position || ""
 
+
+
+
+
   // When the user clicks on picture, display modal
-  $(".individual-photo").on("click", function(event){
+  $(document).on("click", ".individual-photo", function(event){
       url = $(this).data("url");
+      console.log(url);
       position = $(this).data("position");
 
       if (position == true){
         // landscape
-        console.log("true")
         $(modal_content).addClass("modal-content-flex-landscape")
       } else {
         // portrait
-        console.log("false")
         $(modal_content).addClass("modal-content-flex-portrait")
       }
 
@@ -42,3 +45,4 @@ $(document).ready(function(){
   })
 
 })
+

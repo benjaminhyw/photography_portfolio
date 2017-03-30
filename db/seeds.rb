@@ -20,14 +20,14 @@ Photo.create({
   user_id: 1,
   title: "Nude Shadows",
   url: "https://img0.etsystatic.com/072/1/6135861/il_fullxfull.819553494_9nl2.jpg",
-  landscape?: false
+  landscape: false
 })
 
 Photo.create({
   user_id: 1,
   title: "Tagged Ship",
   url: "https://inspirationfeeed.files.wordpress.com/2014/03/20481.jpg",
-  landscape?: true
+  landscape: true
 })
 
 Photo.create({

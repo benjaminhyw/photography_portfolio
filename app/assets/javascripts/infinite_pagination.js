@@ -14,7 +14,7 @@ $(document).ready(function(){
           var page_max = $(this).data("page-max");
 
           $("#sidescrolling-container").append(
-            '<div class="individual-photo" data-url="'+ url +'" data-position="<%= '+ photo_position +' %>"  data-page-max="<%= '+ page_max +' %>"><img src="'+url+'" height="250px" width="250px"><span id="photo-title">'+title+'</span></div>'
+            '<div class="individual-photo" data-url="'+ url +'" data-position="'+ photo_position +'"  data-page-max="<%= '+ page_max +' %>"><img src="'+url+'" height="250px" width="250px"><span id="photo-title">'+title+'</span></div>'
           )
         });
       });

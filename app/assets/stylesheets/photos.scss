@@ -134,6 +134,7 @@ html, body {
   flex-direction: column;
   min-width: 27.50%;
   margin: 3%;
+  padding-top: 1.75%;
   align-items: center;
   background-color: green;
 }
@@ -141,7 +142,6 @@ html, body {
 .individual-photo-landscape{
   height: 40%;
   width: 50%;
-  padding-top: 1.25%;
 }
 
 .individual-photo-portrait{

@@ -1,4 +1,10 @@
 var ready = function() {
+
+  var scroll_count = scroll_count || 0
+
+  // You can refactor the two scroll animations below by naming variables?
+
+
   // This is what does the downward scroll animation
   $("#arrow-pic").on("click", function(event){
     $('html, body').animate({

@@ -11,14 +11,14 @@ var ready = function() {
   $("#arrow-pic").on("click", function(event){
     $('html, body').animate({
     scrollTop: $("#photo-container").offset().top
-    }, 1250, "swing");
+    }, 1230, "swing");
   });
 
   // This is what does the upward scroll animation
   $("#nav-name").on("click", function(event){
     $('html, body').animate({
     scrollTop: $("#site-container").offset().top
-    }, 1250, "swing");
+    }, 875, "swing");
   });
 
   // This controls the color changing nav bar feature

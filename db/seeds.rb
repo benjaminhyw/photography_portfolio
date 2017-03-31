@@ -62,12 +62,12 @@ Photo.create({
   user_id: 1,
   title: "Lion",
   url: "https://s-media-cache-ak0.pinimg.com/originals/af/20/08/af2008e0d300f6fd3ca5b2617a06dff6.jpg",
-  landscape: false
+  landscape: true
 })
 
 Photo.create({
   user_id: 1,
   title: "Tiger",
   url: "http://www.stockvault.net/blog/wp-content/uploads/2012/11/wild-27.jpg",
-  landscape: false
+  landscape: true
 })

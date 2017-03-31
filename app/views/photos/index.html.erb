@@ -37,7 +37,7 @@
           <% @photo_position = photo.landscape %>
           <div class="individual-photo" data-url="<%= @photo_url %>" data-position="<%= @photo_position %>"  data-page-max="<%= @page_max %>">
 
-            <img src="<%= photo.url %>" height='250px' width="250px">
+            <img class="actual-image" src="<%= photo.url %>" height='250px' width="250px">
             <span id="photo-title"><%= photo.title %></span>
           </div>
         <% end %>

@@ -24,7 +24,7 @@ var ready = function() {
   // This controls the color changing nav bar feature
   if($(window).scrollTop() < 325) {
     $("#nav").removeClass("active");
-  }
+  };
 
   $(window).on("scroll", function(){
     if($(window).scrollTop() > (325)) {
@@ -39,8 +39,8 @@ var ready = function() {
     if(($(window).scrollTop() > (500)) && (scroll_count < 1) ){
       scroll_count++;
       $(".individual-photo").fadeIn("slow");
-    });
-  };
+    };
+  });
 };
 $(document).ready(ready);
 $(document).on('turbolinks:load', ready);

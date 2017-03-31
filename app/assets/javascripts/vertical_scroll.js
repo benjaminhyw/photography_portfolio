@@ -1,6 +1,8 @@
 var ready = function() {
 
+  $(".individual-photo").hide();
   var scroll_count = scroll_count || 0
+
 
   // You can refactor the two scroll animations below by naming variables?
 
@@ -25,14 +27,20 @@ var ready = function() {
   }
 
   $(window).on("scroll", function(){
-    if($(window).scrollTop() > 325) {
+    if($(window).scrollTop() > (325)) {
       $("#nav").addClass("active");
     } else {
       //remove the background property so it comes transparent again (defined in your css)
       $("#nav").removeClass("active");
     }
-  });
-};
 
+    // This is what fades the images when you first scroll down
+
+    if(($(window).scrollTop() > (500)) && (scroll_count < 1) ){
+      scroll_count++;
+      $(".individual-photo").fadeIn("slow");
+    });
+  };
+};
 $(document).ready(ready);
 $(document).on('turbolinks:load', ready);

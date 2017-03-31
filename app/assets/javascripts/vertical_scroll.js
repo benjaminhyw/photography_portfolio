@@ -36,11 +36,11 @@ var ready = function() {
 
     // This is what fades the images when you first scroll down
 
-    if(($(window).scrollTop() > (375)) && (scroll_count < 1) ){
+    if(($(window).scrollTop() > (63)) && (scroll_count < 1) ){
       scroll_count++;
       $(".individual-photo").fadeIn("slow");
     };
   });
-});
+};
 $(document).ready(ready);
 $(document).on('turbolinks:load', ready);

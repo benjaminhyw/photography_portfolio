@@ -11,7 +11,7 @@
   </div>
 
   <div id="photo-container">
-    <nav id="nav">
+    <nav id="nav" class='active'>
       <span id="nav-name">
         JESUS MOLINA
       </span>
@@ -22,13 +22,52 @@
       </span>
     </nav>
 
-    <div id="sidescrolling-container">
-      <% @photos.each do |photo| %>
-        <span id="individual-photo">
-          <img src="<%= photo.url %>" height='250px' width="250px">
-        </span>
-      <% end %>
+    <div id="lower-main-container">
+
+     <!--  <div id="left-click">
+        <% if @page > 1 %>
+          <%= link_to "PREV", (next_path(@link - 2) + "/#individual-photo") %>
+        <% end %>
+      </div> -->
+
+      <div id="sidescrolling-container">
+        <% @pics.each do |photo| %>
+          <% @pic_id = photo.id%>
+          <% @photo_url = Photo.where(id: @pic_id)[0].url %>
+          <% @photo_position = photo.landscape %>
+          <div class="individual-photo" data-url="<%= @photo_url %>" data-position="<%= @photo_position %>"  data-page-max="<%= @page_max %>">
+
+            <img class="actual-image" src="<%= photo.url %>" height='250px' width="250px">
+            <span id="photo-title"><%= photo.title %></span>
+          </div>
+        <% end %>
+      </div>
+
+      <!-- These are only necessary if JavaScript is off in the browser.  Therefore they will remain here for the time being -->
+
+      <!-- <div id="right-click">
+        <% if @page < @page_max %>
+          <%= link_to "NEXT", (next_path(@link) + "/#individual-photo"), id: "next_button" %>
+        <% end %>
+      </div> -->
+
+      <!-- The Modal -->
+      <div id="myModal-flex" class="modal-flex">
+
+        <!-- Modal content -->
+        <div class="modal-content-flex">
+
+        <!-- THIS IS IMPORTANT: .close-flex should have an &times; inside the html when the user clicks an image -->
+
+          <span class="close-flex"></span>
+          <img id='modal-image'>
+        </div>
+
+      </div>
+
+
     </div>
   </div>
 </div>
+
 

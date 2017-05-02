@@ -19,23 +19,55 @@ User.create({
 Photo.create({
   user_id: 1,
   title: "Nude Shadows",
-  url: "https://img0.etsystatic.com/072/1/6135861/il_fullxfull.819553494_9nl2.jpg"
+  url: "https://img0.etsystatic.com/072/1/6135861/il_fullxfull.819553494_9nl2.jpg",
+  landscape: false
 })
 
 Photo.create({
   user_id: 1,
   title: "Tagged Ship",
-  url: "https://inspirationfeeed.files.wordpress.com/2014/03/20481.jpg"
+  url: "https://inspirationfeeed.files.wordpress.com/2014/03/20481.jpg",
+  landscape: true
 })
 
 Photo.create({
   user_id: 1,
   title: "Tall Wall Ruins",
-  url: "http://anseladams.com/wp-content/uploads/2016/07/White-House-Ruin-847x1260-1.jpg"
+  url: "http://anseladams.com/wp-content/uploads/2016/07/White-House-Ruin-847x1260-1.jpg",
+  landscape: false
 })
 
 Photo.create({
   user_id: 1,
   title: "Eyes",
-  url: "https://static.pexels.com/photos/120271/pexels-photo-120271.jpeg"
+  url: "https://static.pexels.com/photos/120271/pexels-photo-120271.jpeg",
+  landscape: true
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Tiburon",
+  url: "https://s-media-cache-ak0.pinimg.com/originals/5f/cc/77/5fcc77b457de341705a88cfd7331089a.jpg",
+  landscape: true
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Freckles",
+  url: "https://s-media-cache-ak0.pinimg.com/736x/e4/a4/30/e4a430be8020f49366a98d78442bf6e7.jpg",
+  landscape: false
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Lion",
+  url: "https://s-media-cache-ak0.pinimg.com/originals/af/20/08/af2008e0d300f6fd3ca5b2617a06dff6.jpg",
+  landscape: true
+})
+
+Photo.create({
+  user_id: 1,
+  title: "Tiger",
+  url: "http://www.stockvault.net/blog/wp-content/uploads/2012/11/wild-27.jpg",
+  landscape: true
 })

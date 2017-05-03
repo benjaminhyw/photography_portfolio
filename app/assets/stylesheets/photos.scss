@@ -181,9 +181,19 @@ footer{
   font-size: 2em;
 }
 
+.social_media_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  border-radius: 150%;
+  margin: 2%;
+  background-color: red;
+}
+
 .social_media_icon{
-  width: 12.5%;
-  margin: 0 3%;
+  display: flex;
+  width: 100%;
 }
 
 .footer-color-change{

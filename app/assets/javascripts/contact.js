@@ -11,7 +11,9 @@ $(document).ready(function(){
       $(this).fadeOut(400);
 
       setTimeout(function(){
-        footerSpan.innerText = "Placeholder text, where social media links should go";
+
+
+        footerSpan.innerHTML = "<img src='../assets/social_media_icons/white_fb_transparent_circle.png'>";
       }, 500);
 
       $(this).fadeIn(400);

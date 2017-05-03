@@ -67,7 +67,6 @@ html, body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: black;
 }
 
 #nav{
@@ -119,7 +118,6 @@ html, body {
   height: 100%;
   align-items: center;
   overflow-x: auto;
-  background-color: red;
 }
 
 #left-click{
@@ -136,7 +134,7 @@ html, body {
   margin: 3%;
   padding-top: 1.75%;
   align-items: center;
-  background-color: green;
+  background-color: rgba(128,128,128,.5);
 }
 
 .individual-photo-landscape{

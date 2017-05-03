@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   $(footerSpan).on('click', function(event){
     event.preventDefault();
-    footerSpan.innerHTML = "";
+    $(this).fadeOut(400);
+    // footerSpan.innerHTML = "";
   })
 })

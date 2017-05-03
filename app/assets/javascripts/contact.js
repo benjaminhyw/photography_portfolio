@@ -4,6 +4,12 @@ $(document).ready(function(){
   $(footerSpan).on('click', function(event){
     event.preventDefault();
     $(this).fadeOut(400);
-    // footerSpan.innerHTML = "";
+
+    setTimeout(function(){
+      footerSpan.innerHTML = "Placeholder text, where social media links should go";
+
+    }, 400)
+
+    $(this).fadeIn(400);
   })
 })

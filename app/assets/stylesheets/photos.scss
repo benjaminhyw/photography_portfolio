@@ -185,3 +185,8 @@ footer{
   width: 12.5%;
   margin: 0 3%;
 }
+
+.footer-color-change{
+  background-color: black;
+  transition: background-color 1.25s;
+}

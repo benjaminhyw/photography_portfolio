@@ -5,20 +5,15 @@
         JESUS MOLINA
       </span>
     </div>
-    <footer id="footer">
+    <span id="arrow-span">
       <%= image_tag("downwards-arrow.png", id: "arrow-pic") %>
-    </footer>
+    </span>
   </div>
 
   <div id="photo-container">
     <nav id="nav" class='active'>
       <span id="nav-name">
         JESUS MOLINA
-      </span>
-      <span id="nav-image-container">
-        <span id="nav-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Small-dark-grey-circle.svg/2000px-Small-dark-grey-circle.svg.png" height="100%" width="100%">
-        </span>
       </span>
     </nav>
 
@@ -38,7 +33,7 @@
           <div class="individual-photo" data-url="<%= @photo_url %>" data-position="<%= @photo_position %>"  data-page-max="<%= @page_max %>">
 
             <img class="actual-image" src="<%= photo.url %>" height='250px' width="250px">
-            <span id="photo-title"><%= photo.title %></span>
+            <span id="photo-title"><%= photo.title.upcase %></span>
           </div>
         <% end %>
       </div>
@@ -62,9 +57,11 @@
           <span class="close-flex"></span>
           <img id='modal-image'>
         </div>
-
       </div>
 
+      <footer>
+        CONTACT
+      </footer>
 
     </div>
   </div>

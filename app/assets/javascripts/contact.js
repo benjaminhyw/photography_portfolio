@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  var footer = document.getElementById('contact-footer')
   var footerSpan = document.getElementById('footer-span');
   // .trim(); removes whitespace characters
   var text = footerSpan.innerText.trim();

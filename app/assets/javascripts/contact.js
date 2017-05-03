@@ -12,8 +12,9 @@ $(document).ready(function(){
 
       setTimeout(function(){
 
-
-        footerSpan.innerHTML = "<img class='social_media_icon' src='../assets/social_media_icons/white_fb_transparent_circle.png'>";
+      // Here, I'm just adding all of the img tags for all of the social media links
+      footerSpan.innerHTML =
+        "<img class='social_media_icon' src='../assets/social_media_icons/white_fb_transparent_circle.png'><img class='social_media_icon' src='../assets/social_media_icons/white_twitter_transparent_circle.png'><img class='social_media_icon' src='../assets/social_media_icons/white_ig_transparent_circle.png'><img class='social_media_icon' src='../assets/social_media_icons/white_mail_transparent_circle.png'>";
       }, 500);
 
       $(this).fadeIn(400);

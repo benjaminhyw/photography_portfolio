@@ -170,18 +170,18 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
   height: 10%;
 }
 
 #footer-span{
   display: flex;
+  width: 30%;
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  background-color: red;
 }
 
 .social_media_icon{
-  width: 3.5%;
+  width: 12.5%;
+  margin: 0 3%;
 }

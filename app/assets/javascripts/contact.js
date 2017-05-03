@@ -13,7 +13,7 @@ $(document).ready(function(){
       setTimeout(function(){
 
 
-        footerSpan.innerHTML = "<img src='../assets/social_media_icons/white_fb_transparent_circle.png'>";
+        footerSpan.innerHTML = "<img class='social_media_icon' src='../assets/social_media_icons/white_fb_transparent_circle.png'>";
       }, 500);
 
       $(this).fadeIn(400);

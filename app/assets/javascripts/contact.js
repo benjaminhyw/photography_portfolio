@@ -16,6 +16,7 @@ $(document).ready(function(){
         "<a class='social_media_link' href='https://www.google.com' target='_blank'><img class='social_media_icon' src='../assets/social_media_icons/white_twitter_transparent_circle.png'></a>"+
         "<a class='social_media_link' href='#' target='_blank'><img class='social_media_icon' src='../assets/social_media_icons/white_ig_transparent_circle.png'></a>"+
         "<a class='social_media_link' href='https://www.google.com' target='_blank'><img class='social_media_icon' src='../assets/social_media_icons/white_mail_transparent_circle.png'></a>";
+        $(footerSpan).removeClass('footer-span-direction');
       }, 500);
       $(footer).addClass('footer-color-change');
       $(this).fadeIn(600);

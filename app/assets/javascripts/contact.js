@@ -6,8 +6,8 @@ $(document).ready(function(){
   var count = 0;
 
   $(footerSpan).on('click', function(event){
-    event.preventDefault();
     if ((text == "CONTACT") && (count < 1)){
+      event.preventDefault();
       $(this).fadeOut(400);
       setTimeout(function(){
       // Here, I'm just adding all of the img tags for all of the social media links

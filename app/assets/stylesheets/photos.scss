@@ -195,6 +195,12 @@ footer{
   width: 100%;
 }
 
+.social_media_icon:hover{
+  background-color: turquoise;
+  border-radius: 50%;
+  transition: background-color .5s ease;
+}
+
 .footer-color-change{
   background-color: black;
   transition: background-color 1.25s;

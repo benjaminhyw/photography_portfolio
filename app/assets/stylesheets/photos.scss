@@ -153,6 +153,11 @@ html, body {
   height: 84%;
 }
 
+.actual-image:hover{
+  opacity: 0.35;
+  transition: opacity 1.10s;
+}
+
 #right-click{
   display: flex;
   align-items: center;

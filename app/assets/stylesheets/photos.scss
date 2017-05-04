@@ -186,6 +186,10 @@ footer{
   font-size: 2em;
 }
 
+#footer-span:hover > #underline-span{
+  border-top: 3px solid green;
+}
+
 .footer-span-direction{
   flex-direction: column;
 }

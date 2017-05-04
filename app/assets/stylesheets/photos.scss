@@ -198,8 +198,9 @@ footer{
 
 #underline-span{
   display: flex;
-  width: 5%;
+  width: .5%;
   border-top: 3px solid transparent;
+  transition: width 1s ease, border-top 1s ease;
 }
 
 .social_media_link{

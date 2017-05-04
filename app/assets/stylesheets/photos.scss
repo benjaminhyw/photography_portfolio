@@ -188,6 +188,8 @@ footer{
 
 #footer-span:hover > #underline-span{
   border-top: 3px solid green;
+  width: 45%;
+  transition: width .8s ease, border-top .8s ease;
 }
 
 .footer-span-direction{

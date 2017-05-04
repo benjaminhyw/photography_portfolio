@@ -226,7 +226,7 @@ footer{
 .social_media_icon:hover{
   background-color: turquoise;
   border-radius: 50%;
-  transition: background-color .5s ease;
+  transition: background-color .5s ease, width .5s;
   width: 120%;
 }
 

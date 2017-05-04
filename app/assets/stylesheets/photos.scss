@@ -112,6 +112,11 @@ html, body {
   width: 100%;
 }
 
+#sidescrolling-container-buffer{
+  display: flex;
+  height: 89.5%;
+}
+
 #sidescrolling-container{
   display: flex;
   flex-direction: row;
@@ -132,10 +137,9 @@ html, body {
   display: flex;
   flex-direction: column;
   min-width: 27.50%;
-  margin: 3%;
+  margin: 2.83%;
   padding-top: 1.75%;
   align-items: center;
-  border-radius: 7.5%;
 }
 
 .individual-photo-landscape{
@@ -148,8 +152,8 @@ html, body {
 
 .actual-image{
   display: flex;
-  width: 100%;
-  height: 84%;
+  width: 90%;
+  height: 70%;
   opacity: 1;
   transition: opacity 1.1s;
 }
@@ -176,7 +180,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 11.5%;
+  height: 9.5%;
   border-top: 3px solid black;
 }
 

@@ -186,6 +186,16 @@ footer{
   font-size: 2em;
 }
 
+.footer-span-direction{
+  flex-direction: column;
+}
+
+#underline-span{
+  display: flex;
+  width: 45%;
+  border-top: 3px solid green;
+}
+
 .social_media_link{
   display: flex;
   justify-content: center;

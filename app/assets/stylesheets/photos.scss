@@ -69,16 +69,29 @@ html, body {
   width: 100%;
 }
 
-#nav{
+nav{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 6.5%;
-  transition: background-color .30s ease;
+  color: white;
+  transition: color 2.5s, background-color 2.5s ease, border-bottom 2.5s;
+}
+
+.nav-underline-span{
+  display: flex;
+  border-bottom: 3px solid black;
+  width: 0%;
+  transition: width 2.5s ease;
 }
 
 .active{
-  background-color: white;
-  color: blue;
+  color: black;
+}
+
+.active-nav-span{
+  width: 100%;
 }
 
 #nav-name{
@@ -114,7 +127,7 @@ html, body {
 
 #sidescrolling-container-buffer{
   display: flex;
-  height: 89.5%;
+  height: 90.75%;
 }
 
 #sidescrolling-container{
@@ -136,9 +149,9 @@ html, body {
 
 .individual-photo-div{
   display: flex;
-  max-height: 97.5%;
+  max-height: 95%;
   flex-direction: column;
-  min-width: 30.5%;
+  min-width: 29.5%;
   margin-right: 6%;
   align-items: center;
 }
@@ -182,8 +195,25 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 9.5%;
+}
+
+#footer-overhead-line-span-container{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.footer-overhead-line-span{
+  display: flex;
+  width: 0%;
   border-top: 3px solid black;
+  transition: width 2.5s;
+}
+
+.active-footer-overhead-line-span{
+  width: 100%;
 }
 
 #footer-span{
@@ -194,7 +224,7 @@ footer{
   font-size: 2em;
 }
 
-#footer-span:hover > #underline-span{
+#footer-span:hover > #contact-underline-span{
   border-top: 3px solid gray;
   width: 45%;
   transition: width .8s ease, border-top .8s ease;
@@ -204,7 +234,7 @@ footer{
   flex-direction: column;
 }
 
-#underline-span{
+#contact-underline-span{
   display: flex;
   width: .5%;
   border-top: 3px solid transparent;

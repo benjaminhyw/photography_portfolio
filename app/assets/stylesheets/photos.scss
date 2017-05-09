@@ -198,10 +198,21 @@ footer{
   height: 9.5%;
 }
 
+#footer-overhead-line-span-container{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
 .footer-overhead-line-span{
   display: flex;
-  width: 100%;
+  width: 0%;
   border-top: 3px solid black;
+  transition: width 2.5s;
+}
+
+.active-footer-overhead-line-span{
+  width: 100%;
 }
 
 #footer-span{

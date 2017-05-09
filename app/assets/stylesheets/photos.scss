@@ -206,7 +206,7 @@ footer{
   font-size: 2em;
 }
 
-#footer-span:hover > #underline-span{
+#footer-span:hover > #contact-underline-span{
   border-top: 3px solid gray;
   width: 45%;
   transition: width .8s ease, border-top .8s ease;
@@ -216,7 +216,7 @@ footer{
   flex-direction: column;
 }
 
-#underline-span{
+#contact-underline-span{
   display: flex;
   width: .5%;
   border-top: 3px solid transparent;

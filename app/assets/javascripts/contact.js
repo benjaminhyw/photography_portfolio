@@ -1,14 +1,15 @@
 $(document).ready(function(){
   var footer = document.getElementById('contact-footer')
   var footerSpan = document.getElementById('footer-span');
-  var footerUnderline = document.getElementById('footer-overhead-line-span-container');
+  var footerUnderline = document.getElementsByClassName('footer-overhead-line-span');
   // .trim(); removes whitespace characters
   var text = footerSpan.innerText.trim();
   var count = 0;
 
   $(footerSpan).on('click', function(event){
     if ((text == "CONTACT") && (count < 1)){
-      $(footerUnderline).hide();
+      console.log(footerUnderline)
+      $(footerUnderline).fadeOut(300);
       event.preventDefault();
       $(this).fadeOut(400);
       setTimeout(function(){

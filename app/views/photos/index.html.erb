@@ -31,7 +31,7 @@
             <% @pic_id = photo.id%>
             <% @photo_url = Photo.where(id: @pic_id)[0].url %>
             <% @photo_position = photo.landscape %>
-            <div class="individual-photo" data-url="<%= @photo_url %>" data-position="<%= @photo_position %>"  data-page-max="<%= @page_max %>">
+            <div class="individual-photo-div" data-url="<%= @photo_url %>" data-position="<%= @photo_position %>"  data-page-max="<%= @page_max %>">
 
               <img class="actual-image" src="<%= photo.url %>" height='250px' width="250px">
               <span id="photo-title"><%= photo.title.upcase %></span>

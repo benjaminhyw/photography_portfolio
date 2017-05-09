@@ -134,17 +134,17 @@ html, body {
   width: 5%
 }
 
-.individual-photo{
+.individual-photo-div{
   display: flex;
+  height: 95%;
   flex-direction: column;
-  min-width: 27.50%;
-  margin-right: 8.5%;
-  padding-top: 1.75%;
+  min-width: 27.5%;
+  margin-right: 6%;
   align-items: center;
 }
 
 .individual-photo-landscape{
-  width: 50%;
+  width: 55%;
 }
 
 .individual-photo-portrait{

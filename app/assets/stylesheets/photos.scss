@@ -194,7 +194,13 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 9.5%;
+}
+
+.footer-overhead-line-span{
+  display: flex;
+  width: 100%;
   border-top: 3px solid black;
 }
 

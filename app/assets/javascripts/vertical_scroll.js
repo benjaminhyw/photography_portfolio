@@ -44,7 +44,9 @@ var ready = function() {
 
     if(($(window).scrollTop() > (63)) && (scroll_count < 1) ){
       scroll_count++;
-      $(".individual-photo-div").fadeIn("slow");
+      setTimeout(function(){
+        $(".individual-photo-div").fadeIn(2000);
+      }, 850)
     };
   });
 };

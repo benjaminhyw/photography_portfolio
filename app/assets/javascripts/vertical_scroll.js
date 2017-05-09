@@ -25,16 +25,19 @@ var ready = function() {
   if($(window).scrollTop() < 325) {
     $("#nav").removeClass("active");
     $(".nav-underline-span").removeClass("active-nav-span");
+    $(".footer-overhead-line-span").removeClass("active-footer-overhead-line-span");
   };
 
   $(window).on("scroll", function(){
     if($(window).scrollTop() > (325)) {
       $("#nav").addClass("active");
       $(".nav-underline-span").addClass("active-nav-span");
+      $(".footer-overhead-line-span").addClass("active-footer-overhead-line-span");
     } else {
       //remove the background property so it comes transparent again (defined in your css)
       $("#nav").removeClass("active");
       $(".nav-underline-span").removeClass("active-nav-span");
+      $(".footer-overhead-line-span").removeClass("active-footer-overhead-line-span");
     }
 
     // This is what fades the images when you first scroll down

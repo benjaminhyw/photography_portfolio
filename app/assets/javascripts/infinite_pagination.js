@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var count = 1;
-  var pageMax = $(".individual-photo").data("page-max");
+  var pageMax = $(".individual-photo-div").data("page-max");
 
 
   // You need a new class on your AJAX Images
@@ -11,7 +11,7 @@ $(document).ready(function(){
     if (count <= pageMax){
       count++
       var images = $.get("photos/" + count, function(data){
-        var info = $(".individual-photo", data).each(function(){
+        var info = $(".individual-photo-div", data).each(function(){
 
           var title = $("#photo-title", this).text();
           var url = $(this).data("url");
@@ -28,7 +28,7 @@ $(document).ready(function(){
           }
 
           $("#sidescrolling-container").append(
-            '<div class="individual-photo ' + decide_class + '" data-url="'+ url +'" data-position="'+ photo_position +'"  data-page-max="<%= '+ page_max +' %>"><img class="actual-image" src="'+url+'"><span id="photo-title">'+title+'</span></div>'
+            '<div class="individual-photo-div ' + decide_class + '" data-url="'+ url +'" data-position="'+ photo_position +'"  data-page-max="<%= '+ page_max +' %>"><img class="actual-image" src="'+url+'"><span id="photo-title">'+title+'</span></div>'
           );
 
         });

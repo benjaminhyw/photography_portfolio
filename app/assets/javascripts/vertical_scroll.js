@@ -24,14 +24,17 @@ var ready = function() {
   // This controls the color changing nav bar feature
   if($(window).scrollTop() < 325) {
     $("#nav").removeClass("active");
+    $(".nav-underline-span").removeClass("active-nav-span");
   };
 
   $(window).on("scroll", function(){
     if($(window).scrollTop() > (325)) {
       $("#nav").addClass("active");
+      $(".nav-underline-span").addClass("active-nav-span");
     } else {
       //remove the background property so it comes transparent again (defined in your css)
       $("#nav").removeClass("active");
+      $(".nav-underline-span").removeClass("active-nav-span");
     }
 
     // This is what fades the images when you first scroll down

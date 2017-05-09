@@ -123,6 +123,7 @@ html, body {
   width: 100%;
   height: 100%;
   align-items: center;
+  margin: 0 5%;
   overflow-x: auto;
 }
 
@@ -133,27 +134,28 @@ html, body {
   width: 5%
 }
 
-.individual-photo{
+.individual-photo-div{
   display: flex;
+  max-height: 97.5%;
   flex-direction: column;
-  min-width: 27.50%;
-  margin: 2.83%;
-  padding-top: 1.75%;
+  min-width: 30.5%;
+  margin-right: 6%;
   align-items: center;
 }
 
 .individual-photo-landscape{
-  width: 50%;
+  width: 70%;
 }
 
 .individual-photo-portrait{
   width: 27.5%;
+  height: 100%;
 }
 
 .actual-image{
   display: flex;
-  width: 90%;
-  height: 70%;
+  width: 100%;
+  height: 90%;
   opacity: 1;
   transition: opacity 1.1s;
 }

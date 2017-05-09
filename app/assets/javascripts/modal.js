@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
   // When the user clicks on picture, display modal
-  $(document).on("click", ".individual-photo", function(event){
+  $(document).on("click", ".individual-photo-div", function(event){
       url = $(this).data("url");
       console.log(url);
       position = $(this).data("position");

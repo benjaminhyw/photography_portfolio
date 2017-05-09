@@ -1,6 +1,6 @@
 var ready = function() {
 
-  $(".individual-photo").hide();
+  $(".individual-photo-div").hide();
   var scroll_count = scroll_count || 0
 
 
@@ -38,7 +38,7 @@ var ready = function() {
 
     if(($(window).scrollTop() > (63)) && (scroll_count < 1) ){
       scroll_count++;
-      $(".individual-photo").fadeIn("slow");
+      $(".individual-photo-div").fadeIn("slow");
     };
   });
 };

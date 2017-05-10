@@ -22,6 +22,14 @@ html, body {
   color: white;
   height: 100%;
   width: 100%;
+  background-color: black;
+}
+
+.movie{
+  position: absolute;
+  height: 107%;
+  z-index: 0;
+  opacity: .8;
 }
 
 #landing-container{

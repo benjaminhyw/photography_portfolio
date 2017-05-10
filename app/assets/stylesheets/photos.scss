@@ -70,8 +70,8 @@ html, body {
 }
 
 #arrow-pic:hover{
-  transition: background-color .5s ease;
-  background-color: rgba(0, 0, 0, 0.85);
+  width: 6.5%;
+  transition: width .5s ease;
 }
 
 #photo-container{

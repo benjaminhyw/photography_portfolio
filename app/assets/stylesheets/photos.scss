@@ -63,15 +63,17 @@ html, body {
   height: 6.5%;
   width: 100%;
   z-index: 1;
+
 }
 
 #arrow-pic{
   border-radius: 50%;
+  width: 6%;
 }
 
 #arrow-pic:hover{
-  width: 6.5%;
-  transition: width .5s ease;
+  width: 7%;
+  transition: width .75s ease;
 }
 
 #photo-container{

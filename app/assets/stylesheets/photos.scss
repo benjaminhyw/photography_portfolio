@@ -22,7 +22,6 @@ html, body {
   color: white;
   height: 100%;
   width: 100%;
-  background: url(background.gif);
 }
 
 #landing-container{
@@ -39,7 +38,8 @@ html, body {
   align-items: center;
   font-family: 'Libre Baskerville', serif;
   font-size: 250%;
-  border: 3px solid white;
+  border: 3px solid black;
+  color: black;
   padding: .5%;
   height: 15%;
   width: 40%;

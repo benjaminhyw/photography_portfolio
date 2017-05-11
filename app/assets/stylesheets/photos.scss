@@ -223,10 +223,11 @@ footer{
 
 .footer-overhead-line-span{
   position: absolute;
+  bottom: 9%;
   width: 0%;
   border-top: 3px solid black;
   transform: scaleX(0);
-
+  transform-origin: right;
 }
 
 .active-footer-overhead-line-span{

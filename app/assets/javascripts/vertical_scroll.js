@@ -11,7 +11,7 @@ var ready = function() {
   $("#arrow-pic").on("click", function(event){
     $('html, body').animate({
     scrollTop: $("#photo-container").offset().top
-    }, 1230, "swing");
+    }, 1000, "swing");
   });
 
   // This is what does the upward scroll animation
@@ -45,8 +45,8 @@ var ready = function() {
     if(($(window).scrollTop() > (63)) && (scroll_count < 1) ){
       scroll_count++;
       setTimeout(function(){
-        $(".individual-photo-div").fadeIn(2000);
-      }, 850)
+        $(".individual-photo-div").fadeIn(3000);
+      }, 800)
     };
   });
 };

@@ -247,6 +247,11 @@ footer{
   font-size: 2em;
 }
 
+#hidden-social{
+  display: flex;
+  justify-content: center;
+}
+
 #contact-underline-span{
   border-top: 3px solid transparent;
   transform: scaleX(0);

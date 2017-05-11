@@ -222,14 +222,17 @@ footer{
 }
 
 .footer-overhead-line-span{
-  display: flex;
+  position: absolute;
   width: 0%;
   border-top: 3px solid black;
-  transition: width 2.5s;
+  transform: scaleX(0);
+
 }
 
 .active-footer-overhead-line-span{
   width: 100%;
+  transform: scaleX(1);
+  transition: transform 3s;
 }
 
 #footer-span{

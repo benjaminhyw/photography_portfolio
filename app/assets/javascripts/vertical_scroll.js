@@ -11,7 +11,7 @@ var ready = function() {
   $("#arrow-pic").on("click", function(event){
     $('html, body').animate({
     scrollTop: $("#photo-container").offset().top
-    }, 1230, "swing");
+    }, 1000, "swing");
   });
 
   // This is what does the upward scroll animation

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('#hidden-social').hide();
   var footer = document.getElementById('contact-footer')
   var footerSpan = document.getElementById('footer-span');
   var footerUnderline = document.getElementsByClassName('footer-overhead-line-span');

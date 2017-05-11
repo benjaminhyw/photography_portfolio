@@ -9,15 +9,21 @@ $(document).ready(function(){
 
   $(footerSpan).on('click', function(event){
     if ((text == "CONTACT") && (count < 1)){
+      $(footer).addClass('footer-color-change');
+      $('#hidden-social').fadeIn(0);
       $(footerSpan).contents().filter(function(){ return this.nodeType == 3; }).remove();
       $(footerUnderline).fadeOut(0);
       $(this).fadeOut(0);
       $('#contact-underline-span').hide()
       $(footerSpan).removeClass('footer-span-direction');
-      $(footer).addClass('footer-color-change');
-      $('#hidden-social').show();
-      $(footerSpan).fadeIn(1500);
+      $(footerSpan).fadeIn(500);
       count ++;
+
+
+      setTimeout(function(){
+        $('#hidden-social').addClass('hidden-social-visible');
+      }, 900);
+
     };
 
   });

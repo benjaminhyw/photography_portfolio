@@ -8,7 +8,6 @@ $(document).ready(function(){
 
   $(footerSpan).on('click', function(event){
     if ((text == "CONTACT") && (count < 1)){
-      console.log(footerUnderline)
       $(footerUnderline).fadeOut(300);
       event.preventDefault();
       $(this).fadeOut(400);

@@ -238,17 +238,10 @@ footer{
 
 #footer-span{
   display: flex;
-  flex-direction: column;
   width: 30%;
   justify-content: center;
   align-items: center;
   font-size: 2em;
-}
-
-#footer-span:hover > #contact-underline-span{
-  border-top: 3px solid gray;
-  width: 45%;
-  transition: width .8s ease, border-top .8s ease;
 }
 
 .footer-span-direction{
@@ -256,10 +249,15 @@ footer{
 }
 
 #contact-underline-span{
-  display: flex;
-  width: .5%;
   border-top: 3px solid transparent;
-  transition: width 1s ease, border-top 1s ease;
+  transform: scaleX(0);
+  transition: transform 1.25s;
+}
+
+#footer-span:hover > #contact-underline-span::before{
+  border-top: 3px solid gray;
+  width: 45%;
+  transform: scaleX(1);
 }
 
 .social_media_link{
